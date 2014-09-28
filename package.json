@@ -1,0 +1,33 @@
+{
+  "name": "ember-cli-bidi",
+  "version": "0.0.1",
+  "description": "An Ember CLI Addon that creates right-to-left version of each of your CSS files using css-flip",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ember-addon",
+    "bidi",
+    "right-to-left",
+    "rtl",
+    "css-flip",
+    "flip"
+  ],
+  "author": "Gabor Babicz <gabor.babicz@gmail.com>",
+  "homepage": "https://github.com/zeppelin/ember-cli-bidi",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zeppelin/ember-cli-bidi"
+  },
+  "bugs": {
+    "url": "https://github.com/zeppelin/ember-cli-bidi/issues"
+  },
+  "dependencies": {
+    "broccoli-css-flip": "^0.0.1",
+    "broccoli-merge-trees": "^0.1.4",
+    "broccoli-rename-files": "^0.0.1",
+    "broccoli-static-compiler": "^0.1.4"
+  }
+}
