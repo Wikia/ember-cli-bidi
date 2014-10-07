@@ -4,6 +4,7 @@ var flip = require('broccoli-css-flip');
 var renameFiles = require('broccoli-rename-files');
 var pickFiles = require('broccoli-static-compiler');
 var mergeTrees = require('broccoli-merge-trees');
+var objectAssign = require('object-assign');
 
 function BidiPlugin(options) {
   this.options = options;
@@ -31,8 +32,13 @@ function EmberCLIBidi(project) {
 };
 
 EmberCLIBidi.prototype.included = function(app) {
-  var options = {};
-  app.registry.add('css', new BidiPlugin(options));
+  var options = objectAssign({
+    enabled: true
+  }, app.options.bidi);
+
+  if (options.enabled) {
+    app.registry.add('css', new BidiPlugin(options));
+  }
 };
 
 module.exports = EmberCLIBidi;

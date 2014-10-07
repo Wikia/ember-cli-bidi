@@ -28,6 +28,7 @@
     "broccoli-css-flip": "^0.0.1",
     "broccoli-merge-trees": "^0.1.4",
     "broccoli-rename-files": "^0.0.1",
-    "broccoli-static-compiler": "^0.1.4"
+    "broccoli-static-compiler": "^0.1.4",
+    "object-assign": "^1.0.0"
   }
 }
